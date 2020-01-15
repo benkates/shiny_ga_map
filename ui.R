@@ -2,14 +2,15 @@
 #HEADER
 #############################
 
-header <- dashboardHeader(title = "Map Google Analytics")
+header <- dashboardHeader(title = span(tags$a(img(src="https://images.squarespace-cdn.com/content/5cf6c4ed5171fc0001b43190/1559677094095-SX3U72EDS7F7DIV6C9QY/CompassRed+primary.png?format=1500w&content-type=image%2Fpng", width = 125),href="https://www.compassred.com")))
 
 favicon <-
     tags$head(tags$link(rel = "shortcut icon", href = "https://rstudio.com/favicon-32x32.png"))
 
 #update page title
 update_title <-
-    tags$script(HTML("document.title = 'Map Google Analytics Data';"))
+    tags$script(HTML("document.title = 'Map Google Analytics Data';
+                     document.getElementsByClassName('logo')[0].style.backgroundColor = 'white';"))
 
 #############################
 #SIDEBAR
@@ -103,7 +104,7 @@ body <- dashboardBody(tags$head(
 tabItems(main_tab))
 
 footer <- dashboardFooter(
-    left_text = tags$div(tags$a(tags$img(src="https://images.squarespace-cdn.com/content/5cf6c4ed5171fc0001b43190/1559677094095-SX3U72EDS7F7DIV6C9QY/CompassRed+primary.png?format=1500w&content-type=image%2Fpng",style="width:100%;height:100%;"), href = "https://www.compassred.com"),style="width:15%;"),
+    left_text = tags$a(tags$img(src="https://images.squarespace-cdn.com/content/5cf6c4ed5171fc0001b43190/1559677094095-SX3U72EDS7F7DIV6C9QY/CompassRed+primary.png?format=1500w&content-type=image%2Fpng",style="width:9em;"), href = "https://www.compassred.com"),
     right_text = tags$a("Lat/Long Data provided by Simple Maps", href = "https://simplemaps.com/data/us-cities")
 )
 
@@ -111,5 +112,6 @@ ui <- dashboardPagePlus(header,
                         sidebar,
                         body,
                         footer = footer,
+                        skin = "black",
                         useShinyjs()
 )
