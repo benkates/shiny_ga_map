@@ -28,8 +28,6 @@ main_tab <- tabItem(
     tabName = "queryData",
     favicon,
     update_title,
-    h2("Google Analytics"),
-    br(),
     fluidRow(
         box(
             title = "Query data from Google Analytics",
