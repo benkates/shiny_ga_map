@@ -105,7 +105,7 @@ body <- dashboardBody(tags$head(
 tabItems(main_tab))
 
 footer <- dashboardFooter(
-    left_text = tags$a("Ben Kates @ CompassRed", href = "https://compassred.com"),
+    left_text = tags$div(tags$a(tags$img(src="https://images.squarespace-cdn.com/content/5cf6c4ed5171fc0001b43190/1559677094095-SX3U72EDS7F7DIV6C9QY/CompassRed+primary.png?format=1500w&content-type=image%2Fpng",style="width:100%;height:100%;"), href = "https://www.compassred.com"),style="width:15%;"),
     right_text = tags$a("Lat/Long Data provided by Simple Maps", href = "https://simplemaps.com/data/us-cities")
 )
 
