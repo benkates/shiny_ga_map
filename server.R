@@ -14,7 +14,7 @@ server <- function(input, output, session) {
   #populate dropdown with above data
   selected_id <- callModule(authDropdown, "authMenu", ga.table = ga_accounts)
   
-  #set reative variable to user's segments
+  #set reactive variable to user's segments
   ga_segments <- reactive({
     req(access_token())
     with_shiny(ga_segment_list, shiny_access_token = access_token())
@@ -33,7 +33,7 @@ server <- function(input, output, session) {
                       selected = "-1")
   })
   
-  #set reative variable to selected segment ID
+  #set reactive variable to selected segment ID
   selected_ga_segment_id <- eventReactive(input$segmentSelect,{
     req(ga_segments())
     paste0("gaid::",input$segmentSelect)
