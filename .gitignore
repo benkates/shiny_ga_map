@@ -1,21 +1,12 @@
-
-.Rproj.user/BD2BB153/sources/prop/9576D59B
-.Rproj.user/BD2BB153/sources/prop/INDEX
 *.Rproj
-*.dcf
-.Rproj.user/BD2BB153/sources/s-FF969FEF/3BB2D677
-.Rproj.user/BD2BB153/sources/s-FF969FEF/3BB2D677-contents
-.Rproj.user/BD2BB153/sources/s-FF969FEF/lock_file
-.Rproj.user/shared/notebooks/patch-chunk-names
-client-web-id.json
-
-#*.Rproj
 .DS_Store
 .httr-oauth*
 *.rds
 rsconnect/*	
 .Rproj*
 client-web-id.json
+*.dcf
+
 
 # Created by https://www.gitignore.io/api/r
 # Edit at https://www.gitignore.io/?templates=r
