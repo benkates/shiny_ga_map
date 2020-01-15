@@ -1,4 +1,5 @@
 #load libraries
+#note: use library() funs and not pacman if using shinyapps.io
 if (!require(pacman)) install.packages('pacman')
 pacman::p_load(
   shiny,
