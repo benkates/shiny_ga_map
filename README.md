@@ -7,3 +7,5 @@ In order to run, make the following changes:
 - `global.R`:  create/set your own client ID/secret from GCP and set your own Mapbox token
 - `ui.R`: uncomment  `googleAuthUI()` and remove the placeholder below
 - `server.R`: uncomment the `ga_data()` reactive variable and remove the placeholder below
+
+![App in this repo](https://i.imgur.com/i0VKpur.png)
