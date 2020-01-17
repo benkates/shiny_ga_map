@@ -10,13 +10,16 @@ pacman::p_load(
   googleAnalyticsR,
   googleAuthR,
   data.table,
-  fontawesome,
   tidyverse,
   deckgl,
   colourpicker,
   grDevices,
   stringi,
   janitor
+)
+
+pacman::p_load_gh(
+  "rstudio/fontawesome"
 )
 
 #set client ID + secret
