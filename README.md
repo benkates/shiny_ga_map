@@ -1,6 +1,6 @@
 # Shiny GA Map
 
-This repo is part of a post detailing how to create a custom Google Analytics Shiny app [found here](https://compassred.shinyapps.io/shiny_ga_map/).
+This repo is part of a post detailing how to create a custom Google Analytics Shiny app [found here](https://compassred.shinyapps.io/shiny_ga_map_published/).
 
 In order to run, make the following changes:
 
